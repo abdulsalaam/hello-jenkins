@@ -1,6 +1,6 @@
 #!/bin/sh
  
-ssh app@54.254.161.36 <<EOF
+ssh -t app@54.254.161.36 <<EOF
  cd ~/hello-jenkins
   git pull origin master
   npm install --production
