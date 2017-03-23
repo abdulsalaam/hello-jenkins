@@ -1,9 +1,9 @@
 #!/bin/sh
  
-#ssh app@54.254.161.36 <<EOF
-# cd ~/hello-jenkins
+ssh app@54.254.161.36 <<EOF
+ cd ~/hello-jenkins
   git pull origin master
   npm install --production
   forever restartall
-#  exit
-#EOF
+  exit
+EOF
