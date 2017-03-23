@@ -9,5 +9,5 @@ app.get('/', function (req, res) {
 var port =  (process.env.PORT || 5000) 
 app.listen(port);
 console.log('Server started on port:'+port)
-console.log('Stop  server use command: Ctl+c') 
+console.log('Stop  server command: Ctl+c') 
 module.exports = app;
