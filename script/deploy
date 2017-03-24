@@ -1,8 +1,8 @@
 #!/bin/sh
  
-#ssh -t app@54.254.161.36 <<EOF
-cd
 ssh -i ~/.ssh/id_rsa app@54.254.161.36 <<EOF
+#ssh -t -t app@54.254.161.36 <<EOF
+#ssh -t -t app@54.254.161.36 <<EOF
  cd ~/hello-jenkins
   git pull origin master
   npm install --production
